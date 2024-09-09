@@ -1,0 +1,38 @@
+{
+  "name": "webudp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "rollup": "mkdir -p dist && npx rollup -c",
+    "deploy": "fly deploy --ha=false"
+  },
+  "author": "Peter Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^22.5.4",
+    "buffer": "^6.0.3",
+    "eventemitter3": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missinglink/webudp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/missinglink/webudp/issues"
+  },
+  "homepage": "https://github.com/missinglink/webudp#readme",
+  "description": "",
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8"
+  }
+}
